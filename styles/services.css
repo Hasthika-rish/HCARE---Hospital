@@ -1,0 +1,241 @@
+body,html{
+   
+    height: auto;
+    padding: 2px;
+    font-size: large;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    font-family: Arial, sans-serif;
+   background-color: #eff4eb;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2596be;
+}
+
+
+
+    
+
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    height: 10px;
+    align-content: flex-start;
+    margin-right: 900px;
+    margin-bottom: 40px;
+}
+
+.contact-info{
+    margin-bottom: 5px;
+    color: black;
+    
+
+}
+h2{
+    font-weight: bolder;
+    background-color: #b6ab95;
+    font-size: larger;
+    text-align: center;
+}
+
+
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.link{
+    background-color: #b6ab95; /*links*/
+    padding: 10px ;
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+    
+}
+
+
+
+nav a:hover{
+    background-color: #425a67;
+    transition: 0.4s ease-in;
+    border-radius: 30px;
+}
+
+.button {
+    display: inline-block; /*Registration Button*/
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #425a67; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    position: absolute;
+    right: 0;
+   top: 1050px;
+    
+}
+
+.button:hover {
+    background-color:#b6ab95; 
+}
+
+.button:active {
+    background-color: #2596be; 
+}
+
+
+.mainsec {
+    padding: 10px;
+    
+    margin-top: 20px;
+}
+
+
+.mainsec h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.service {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+
+.service-content {
+    background-color: #8b663b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1; /* Makes the items flexible */
+    max-width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for the images */
+.service-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.service-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+footer{
+    background-color: 
+    #676d66;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: large;
+    font-family: 'Arial', sans-serif;;
+    
+    
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-left: 0;
+    
+    
+    
+}
+footer h2{
+    font-size: xx-large;
+    font-family: fantasy;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .service-content {
+        max-width: 100%;}
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    
+    .link{
+        flex-direction: column;
+    }
+    .hcontainer{
+        display: block;
+        padding: 10px;
+    }
+    
+    
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #000000;
+        background-color: #425a67; 
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        position: relative;
+        left: -20px;
+       top: -30px;
+        
+    }
+}
+    
+
+        
+        
+     
+    
+
+    
+
+    
+
+

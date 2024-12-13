@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="styles/reg.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.pngg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="page-link">
+            <a href="services.html" class="button">GO TO SERVICES PAGE</a>
+         </div>
+      
+    </header>
+    <h2>Registration Form </h2>
+    <main>
+        <form>
+            <fieldset>
+              <legend>Personnal Information</legend>
+              <label for="first-name">First Name</label><br>
+              <input type="text" id="first-name" name="first-name" required><br>
+              <label for="last-name">Last Name</label><br>
+              <input type="text" id="last-name" name="last-name" required><br>
+              <label for="address">Permenant Address</label><br>
+              <input type="text" id="address" name="address" required><br>
+              <label for="birthday">Birthday</label><br>
+             <input type="date" id="birthday" name="birthday" required><br>
+            </fieldset> 
+           <fieldset>
+               <legend>Contact-Info</legend>
+                <label for="mobile-number" >Phone Number</label><br>
+                 <input type="text" id="mobile-number" name="mobile-number" required><br>
+                 <label for="email-address">Email Address</label><br>
+                  <input type="email" id="email-address" name="email-address"><br>
+
+                
+            
+             </fieldset>
+             <fieldset>
+                 <legend>User Agreement</legend>
+                 <input type="radio" id="agreement" name="user-agreement" value="accepting" required><br>
+                 <label>Once you submited the form,you are not able to make any changes within 24hours</label><br>
+                </fieldset>
+               <button type="submit">Submit</button>
+               <button type="reset">Reset</button>
+
+        </form>
+    </main>
+    
+</body>
+</html>

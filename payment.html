@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCARE HOSPITALS</title>
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="favi/site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>PAYMENT PAGE</h1>
+    </header>
+    <main>
+        <form id="billing-form">
+            <h2>Order Details</h2>
+            <div id="order-summary">
+                <p id="total-amount" style="font-weight: bold; margin-top: 10px;">Total: LKR 0 /=</p>
+            </div>
+
+            <h2>Payment Options</h2>
+            <div class="payment-section">
+                <input type="radio" id="cod" name="payment-method" value="COD" checked>
+                <label for="cod">Cash on Delivery</label>
+                <div id="cod-details" class="payment-details">
+                    <p>Payment Will be Collected on Delivery Date.</p>
+                </div>
+
+                <input type="radio" id="card" name="payment-method" value="Card">
+                <label for="card">Card Payment</label>
+                <div id="card-details" class="payment-details hidden">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required disabled><br>
+
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="month" id="expiry-date" name="expiry-date" required disabled><br>
+
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" placeholder="Enter CVV" required disabled>
+                </div>
+            </div>
+
+            <h2>Contact Information</h2>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required placeholder="Enter your name">
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <div class="bu" id="but1">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="bu" id="but2">
+                <button type="reset">Reset</button>
+            </div>
+            <div class="end">
+                <span>You will be redirected to the pharmacy page once the submission is completed</span>
+            </div>
+        </form>
+    </main>
+   
+    <script src="JavaScript/payment.js" defer></script>
+</body>
+</html>

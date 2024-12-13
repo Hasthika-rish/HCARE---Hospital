@@ -1,0 +1,284 @@
+html,body{
+    
+    padding: 2px;
+    height: 100%; 
+    
+    
+    font-size: large;
+   
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    
+    font-family: Arial, sans-serif;
+    background-color: #eff4eb;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2596be;
+}
+
+.contact-info{
+    margin-bottom: 5px;
+    color: black;
+    
+
+}
+h3{
+    font-weight: bolder;
+}
+
+    
+
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    height: 10px;
+    align-content: flex-start;
+    margin-right: 900px;
+    margin-bottom: 40px;
+}
+
+.link{
+    background-color: #b6ab95;
+    padding: 10px ;
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+    padding: 10px 10px 10px 10px;
+}
+nav a:hover{
+    background-color:#425a67;
+    transition: 0.4s ease-in;
+    border-radius: 30px;
+}
+
+.mainimg{
+    width: 100%;;
+    height: auto;
+    align-content: center;
+    margin-top: 20px;
+    
+    
+}
+
+.welcome {
+    background-color:  #8b663b;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.sect{
+    padding: 10px;
+}
+
+.sect h2 {
+    margin-bottom: 20px;
+    background-color:#b6ab95;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.services {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.services p{
+    font-size: larger;
+    text-align: center;
+    
+    
+}
+
+.sd{
+   text-align: center;
+   margin-left: 25px;
+   justify-content: center;
+   background-color:#2596be;
+   border-radius: 30px;
+   padding: 20px;
+
+
+}
+
+
+.simg {
+    width:600px ;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 30px;
+    padding: 30px;
+    background-color: #8b663b;
+    border-radius: 30px;
+    
+}
+
+
+
+.des{
+    background-color: #676d66;
+    text-align: center;
+    font-weight: bolder;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.sect{
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+    
+
+
+
+#sect07{
+    backdrop-filter: blur(4px);
+    background-size: auto;
+    justify-items: left;
+    margin-bottom: 20px;
+}
+#sect08 {
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    justify-items: left;
+    padding: 20px;
+    margin-bottom: 40px; /* Adds a gap between sect08 and footer */
+}
+
+footer{
+    background-color: 
+    #676d66;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: large;
+    font-family: 'Arial', sans-serif;;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    
+}
+footer h2{
+    font-size: x-large;
+    font-family: fantasy;
+    text-align: center;
+}
+
+
+    
+    
+
+
+  @media (max-width: 600px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    .link{
+        flex-direction: column;
+    }
+    .hcontainer{
+        display: block;
+        padding: 10px;
+    }
+    
+      
+       
+    
+   
+    .maind{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 2px 0;
+        width: 600px;}
+    
+
+    .service-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    
+    .welcome{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .services{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .simg {
+     padding: 20px;
+     border-radius: 0px;
+     margin-left: -10px;
+     
+     
+
+    }
+    .simg img{
+         margin-left: 10px;
+         width: 400px;
+         height: auto;
+
+    }
+    .sd{
+        margin-left: 7px;
+        padding: 5px;
+    }
+   
+    
+    
+}
+
+    
+
+      
+     
+      
+
+      
+    
+      
+
+
+

@@ -1,0 +1,309 @@
+html,body{
+    
+    padding: 2px;
+    height: 100%; 
+    
+    
+    font-size: large;
+   
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    
+    font-family: Arial, sans-serif;
+    background-color: #eff4eb;
+}
+
+.hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2596be;
+}
+
+.contact-info{
+    margin-bottom: 5px;
+    color: black;
+    
+
+}
+h3{
+    font-weight: bolder;
+}
+
+    
+
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    height: 10px;
+    align-content: flex-start;
+    margin-right: 900px;
+    margin-bottom: 40px;
+}
+
+.link{
+    background-color: #b6ab95;
+    padding: 10px ;
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color:black;
+    padding: 10px 10px 10px 10px;
+}
+nav a:hover{
+    background-color:#425a67;
+    transition: 0.4s ease-in;
+    border-radius: 30px;
+}
+
+/*Main headeing*/
+h2{
+    text-align: center;
+    font-size: x-large; 
+    font-weight: 900;
+    background-color: #676d66;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.map{
+    display: flex;
+    background-color:#b6ab95;
+    position: absolute;
+    left:670px;
+    margin-top: 150px;
+    border-radius: 10px;
+    height: 200px;
+    width: 1000px;
+    flex-direction: row;
+    
+   
+}
+
+.d{
+    
+    margin-bottom: 20px;
+    
+    display: flex;
+   text-align: right;
+    
+    flex-direction: row;
+    border-radius: 10px;
+     width: 100%;
+     height: 420px;
+    background-color: #2596be;
+    align-content: center;
+}
+.hosp{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    row-gap: 50px;
+    width: 500px;
+    height: 350px;
+    margin-top: 2px;
+    margin-left: -15px;
+    
+}
+
+
+
+
+.para{
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+   
+   
+}
+.desc{
+    width: 100%;
+}
+/*table heading*/
+h2{
+    font-size: larger;
+    font-weight: bolder;
+
+}
+/*styles for table*/
+table,th,td{
+   border: 4px solid#8b663b;
+   text-align: center;
+    border-collapse: collapse;
+    font-size: large;
+
+}
+table{
+    width: 100%;
+    border-radius: 20px;
+    backdrop-filter:blur(10px);
+    
+   
+}th{
+    background-color: #dccbb8;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+
+
+}
+tfoot{
+    width: 100%;
+    text-align: center;
+    background-color: #425a67;
+    height: 50px;
+}
+footer{
+    background-color: 
+    #676d66;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: large;
+    font-family: 'Arial', sans-serif;
+    margin-top:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+footer h2{
+    font-size: xx-large;
+    font-family: fantasy;
+    text-align: center;
+}
+   
+
+   
+  @media (max-width: 600px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .link{
+        flex-direction: column;
+
+        
+    }
+
+    .hcontainer{
+        display: block;
+        padding: 10px;
+    }
+    .d{
+    
+        display: flex;
+        flex-wrap: nowrap;  
+        flex-direction: column;  
+        padding-bottom: 400px;
+        
+        
+        
+      }
+        
+        .hosp img{
+            display: flex;
+            flex-wrap: nowrap;
+            
+            width: 300px;
+            height: 300px;
+            margin-left: 65px;
+    
+        }
+        .map{
+            display: flex;
+            flex-direction: column;
+            width: max-content;
+            height: auto;
+            position: relative;
+             left: 50px;
+             top: -100px;
+        }
+        
+        
+        
+        
+        .map iframe{
+            display: flex;
+            flex-direction: column;
+             width: 360px;
+             height: 100px;
+             
+        
+            }     
+      
+        
+        
+        
+       .para{
+            position: relative;
+            left: 30px;
+            top:40px;
+            width: 400px;
+       }
+
+
+    
+   thead, tfoot,  th,  td,  tr {
+            display: block;
+            width: 100%;
+            
+    }
+    th{
+        display: none;
+    }
+  }
+   
+
+    
+  
+   
+  
+    
+    
+   
+
+  
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+    

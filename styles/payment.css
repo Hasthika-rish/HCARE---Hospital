@@ -1,0 +1,231 @@
+body {
+    background-image: url(../images/background.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: #2596be;
+   
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    /* background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #e9e5db;
+    border-radius: 10px;
+    box-shadow: 0 0 12px black;
+    align-content: center;
+    padding: 20px;
+}
+#total-amount{
+    background-color: #887b6e;
+    display: flex;
+    border-radius: 20px;
+    padding: 10px;
+}
+.cart-item{
+ background-color: #8b663b;
+ border-radius: 20px;
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+ width: 50%;
+
+
+}
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#cart-list li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+#cart-list li span {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+#cod-details{
+    display: flex;
+    background-color: white;
+    border: #000000 solid 1px;
+    font-weight: bolder;
+    
+    
+}
+#card-details{
+    
+    flex-direction: column;
+    background-color: white;
+    border: #000000 solid 1px;
+    font-weight: bolder;
+}
+
+
+.payment-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: 20px; /* Adjust as needed */
+    height: 20px;
+    margin-right: 10px; /* Optional: Add space between button and label */
+   
+    margin-right: 10px; /* Optional: Add space between button and label */
+}
+label {
+    vertical-align: middle;
+    font-size: 1.2rem; /* Adjust text size to match button size */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.payment-section {
+    margin-top: 20px;
+}
+
+.payment-details {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+}
+
+.payment-details.hidden {
+    display: none;
+}
+
+button[type="submit"], button[type="reset"] {
+    color: black;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+button[type="submit"]{
+    background-color: #2596be;
+}
+button[type="submit"]:hover {
+    background-color: #425a67;
+    color: white;
+    transition: 0.2s ease-in;
+    border-radius: 30px;
+}
+
+button[type="reset"] {
+    background-color: #887b6e;
+
+   
+    
+    
+}
+
+button[type="reset"]:hover {
+    background-color: #565452;
+    color: white;
+    transition: 0.2s ease-in;
+    border-radius: 30px;
+}
+/*Button to return to doctor page*/
+.button {
+    display: inline-block;
+    padding: 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #425a67; 
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: -10px;
+        
+    
+
+    
+}
+.end {
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Width of the container */
+    box-sizing: border-box;
+}
+
+.end span {
+    display: inline-block;
+    animation: move 10s linear infinite;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+

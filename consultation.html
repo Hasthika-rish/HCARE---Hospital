@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Page</title>
+    <link rel="stylesheet" href="styles/consultation.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favi/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div class="page-link">
+            <a href="doctor.html" class="button">Return to Doctor Page</a>
+        </div>
+    </header>
+    <!-- Title of the page -->
+    <h2>Reserve Your Consultant</h2>
+    <main>
+        <form action="#" method="post" id="regform">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <label for="patient-name">Patient Name</label><br>
+                <input type="text" id="patient-name" name="patient-name" required><br>
+                
+                <label>Nearest HCARE Hospital</label><br>
+                <input type="radio" id="hospital1" name="hospital" value="Ragama"> 
+                <label for="hospital1">Ragama HCARE</label><br>
+                
+                <input type="radio" id="hospital2" name="hospital" value="Kurunegala">
+                <label for="hospital2">Kurunegala HCARE</label><br>
+                
+                <input type="radio" id="hospital3" name="hospital" value="Anuradhapura">
+                <label for="hospital3">Anuradhapura HCARE</label><br>
+                
+                <label for="identity">ID-Number</label><br>
+                <input type="text" id="identity" name="identity" required><br>
+            </fieldset> 
+            <fieldset>
+                <legend>Contact Info</legend>
+                <label for="mobile-number">Phone Number</label><br>
+                <input type="text" id="mobile-number" name="mobile-number" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Consultant</legend>
+                <!-- Radio buttons for different consultant options -->
+                <input type="radio" id="doc1" name="doc" value="Dr. A. A. AHAMED RIYAAZ">
+                <label for="doc1">Dr. A. A. AHAMED RIYAAZ</label><br>
+                
+                <input type="radio" id="doc2" name="doc" value="Dr (Ms.) AMITHA NELUMDENIYA">
+                <label for="doc2">Dr (Ms.) AMITHA NELUMDENIYA</label><br>
+                
+                <input type="radio" id="doc3" name="doc" value="Dr.THILINI THARUMADHI">
+                <label for="doc3">Dr.THILINI THARUMADHI</label><br>
+                
+                <input type="radio" id="doc4" name="doc" value="Dr.CHANUTHI SAMARAKOON">
+                <label for="doc4">Dr.CHANUTHI SAMARAKOON</label><br>
+                
+                <input type="radio" id="doc5" name="doc" value="Dr.ARTHUR MORGAN">
+                <label for="doc5">Dr.ARTHUR MORGAN</label><br>
+                
+                <input type="radio" id="doc6" name="doc" value="Dr.CARL JHONSON">
+                <label for="doc6">Dr.CARL JHONSON</label><br>
+                
+                <input type="radio" id="doc7" name="doc" value="Dr.HIRUSHI HASANGI">
+                <label for="doc7">Dr.HIRUSHI HASANGI</label><br>
+                
+                <input type="radio" id="doc8" name="doc" value="Dr.DAVID JONES">
+                <label for="doc8">Dr.DAVID JONES</label><br>
+            </fieldset>
+            <!-- Buttons to submit or reset the form -->  
+            <div class="bu" id="but1">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="bu" id="but2">
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
