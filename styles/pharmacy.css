@@ -186,6 +186,19 @@ table th, table td {
     padding: 10px;
     text-align: center;
 }
+.remove-from-cart {
+    background-color:  #3d7390 ;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-from-cart:hover {
+    background-color: #8b663b ;
+}
+
 
 table th {
     background-color: #8b663b;

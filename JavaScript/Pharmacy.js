@@ -76,13 +76,14 @@ function updateCart() { // Function to update the cart table and total price
 
     let totalPrice = 0; //initially total price is set to 0
 
-    cart.forEach(item => { //iterate over each item in cart 
+    cart.forEach((item,index) => { //iterate over each item in cart 
         const row = cartTable.insertRow(); //insertrow : creates a new row, 
         row.innerHTML = ` 
             <td>${item.name}</td>
             <td>LKR ${item.price} /=</td>
             <td>${item.quantity}</td>
             <td>LKR ${item.subtotal} /=</td>
+          <td><button class="remove-from-cart" data-index="${index}">Remove</button></td>
         `; //innerHTML : to dynamically populate it with medicine details
         totalPrice += item.subtotal; //updates total price with subtotal
     });
@@ -90,7 +91,22 @@ function updateCart() { // Function to update the cart table and total price
     totalPriceElement.textContent = `LKR ${totalPrice} /=`; // display the total price is speicifed table data section
 
 
+    
     localStorage.setItem('cart', JSON.stringify(cart)); // Save cart data to localStorage
+    document.querySelectorAll(".remove-from-cart").forEach(button => { //select all elements in the selected class and fetch remove buttons dynamically to the cart
+        button.addEventListener("click", event => { 
+            const index = parseInt(event.target.getAttribute("data-index"), 10); //Fetches the value of the specified attribute (data-index) from the clicked button.
+            removeFromCart(index); //calls the function to remove specific index location
+        });
+    });
+
+
+
+
+}
+function removeFromCart(index) { 
+    cart.splice(index, 1); // Remove the item at the specified index
+    updateCart(); // update the cart after removal
 }
 
 
